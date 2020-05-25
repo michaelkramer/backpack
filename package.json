@@ -1,0 +1,37 @@
+{
+  "name": "backpack",
+  "version": "1.0.0",
+  "description": "Configs",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./src/**/*.ts --format stylish",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=10.20.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/michaelkramer/-kramer-backback.git"
+  },
+  "author": "Michael Kramer michaelrkramer@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaelkramer/-kramer-backback/issues"
+  },
+  "homepage": "https://github.com/michaelkramer/-kramer-backback#readme",
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "knex": "^0.21.1",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "@types/knex": "^0.16.1",
+    "@types/lodash": "^4.14.152",
+    "@types/node": "^14.0.5",
+    "@typescript-eslint/eslint-plugin": "^3.0.1",
+    "@typescript-eslint/parser": "^3.0.1",
+    "eslint": "^7.1.0",
+    "typescript": "^3.9.3"
+  }
+}
