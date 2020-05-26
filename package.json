@@ -6,7 +6,9 @@
   "scripts": {
     "build": "tsc",
     "lint": "eslint ./src/**/*.ts --format stylish",
-    "test": "ava"
+    "test": "ava",
+    "preversion": "npm test",
+    "postversion": "git push && git push --tags"
   },
   "engines": {
     "node": ">=10.20.1"
