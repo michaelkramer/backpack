@@ -1,9 +1,10 @@
 {
-  "name": "backpack",
-  "version": "1.0.0",
+  "name": "@michaelkramer/backpack",
+  "version": "1.0.7",
   "description": "Configs",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
+    "build": "tsc",
     "lint": "eslint ./src/**/*.ts --format stylish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
