@@ -1,6 +1,6 @@
 {
   "name": "@michaelkramer/backpack",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Configs",
   "main": "./dist/index.js",
   "scripts": {
