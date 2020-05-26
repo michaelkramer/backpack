@@ -33,6 +33,10 @@ export class Logger implements LoggerInterface {
     this.scope = Logger.parsePathToScope(scope ? scope : Logger.DEFAULT_SCOPE);
   }
 
+  public set(scope?: string) {
+    this.scope = Logger.parsePathToScope(scope ? scope : Logger.DEFAULT_SCOPE);
+  }
+
   public debug(message: string, ...args: any[]): void {
     this.log("debug", message, args);
   }

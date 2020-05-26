@@ -13,7 +13,6 @@ Thumbs.db
 .tmp/
 
 # Dist #
-dist/
 build/
 tsconfig.build.json
 
