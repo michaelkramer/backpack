@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.init = void 0;
 var lodash_1 = require("lodash");
 var config_1 = require("../config");
 var logger_1 = require("../logger");

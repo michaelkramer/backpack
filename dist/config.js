@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.configDefault = exports.cache = exports.db = void 0;
 var db = {};
 exports.db = db;
 var cache = {};
