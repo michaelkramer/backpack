@@ -8,7 +8,7 @@
     "lint": "eslint ./src/**/*.ts --format stylish",
     "test": "ava",
     "preversion": "npm test",
-    "postversion": "git push && git push --follow-tags"
+    "postversion": "npm build && git push && git push --follow-tags"
   },
   "engines": {
     "node": ">=10.20.1"
