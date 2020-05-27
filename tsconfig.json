@@ -40,5 +40,5 @@
       "esnext.asynciterable"
     ]
   },
-  "exclude": ["node_modules", "**/*.spec.ts", "scripts"]
+  "exclude": ["node_modules", "**/*.spec.ts", "scripts", "./dist"]
 }
