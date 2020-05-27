@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.addDBConnection = void 0;
 var tslib_1 = require("tslib");
 var lodash_1 = require("lodash");
 var knex_1 = tslib_1.__importDefault(require("knex"));

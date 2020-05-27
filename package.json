@@ -3,12 +3,15 @@
   "version": "1.0.15",
   "description": "Configs",
   "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsc -d",
+    "build": "tsc",
+    "clean": "rm -R ./dist",
     "lint": "eslint ./src/**/*.ts --format stylish",
     "test": "ava",
+    "patch": "npm version patch",
     "preversion": "npm test",
-    "postversion": "npm run build && git push && git push --follow-tags"
+    "postversion": "npm run clean && npm run build && git push && git push --follow-tags"
   },
   "engines": {
     "node": ">=10.20.1"
