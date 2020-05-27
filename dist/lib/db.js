@@ -1,12 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.addDBConnection = void 0;
 var tslib_1 = require("tslib");
 var lodash_1 = require("lodash");
 var knex_1 = tslib_1.__importDefault(require("knex"));
 var chalk_1 = tslib_1.__importDefault(require("chalk"));
-var config_1 = require("../config");
-config_1.logger.set(__filename);
+var logger_1 = require("../logger");
+var log = new logger_1.Logger(__filename);
 var connectionOptionDefaults = {
     debug: false,
     client: "pg",
@@ -38,16 +37,16 @@ function enableSQLLogging(knexInstance, connectionName) {
                 // @ts-ignore
                 return knexInstance.raw("?", [bindings_1.shift()]);
             });
-            config_1.logger.info(chalk_1.default.blue("[" + connectionName + "]"), chalk_1.default.magenta(sql), totalTimeInMS);
+            log.info(chalk_1.default.blue("[" + connectionName + "]"), chalk_1.default.magenta(sql), totalTimeInMS);
         }
         else if (query.sql) {
-            config_1.logger.info(chalk_1.default.blue("[" + connectionName + "]"), chalk_1.default.magenta(query.sql), totalTimeInMS);
+            log.info(chalk_1.default.blue("[" + connectionName + "]"), chalk_1.default.magenta(query.sql), totalTimeInMS);
         }
     });
 }
 function addDBConnection(name, options, db) {
     if (db[name]) {
-        config_1.logger.warn(chalk_1.default.yellow.bold("DB connection " + name + " already added"));
+        log.warn(chalk_1.default.yellow.bold("DB connection " + name + " already added"));
         return db[name];
     }
     var knexInstance = knex_1.default(lodash_1.merge({}, connectionOptionDefaults, options));

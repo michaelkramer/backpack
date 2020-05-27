@@ -4,7 +4,7 @@
   "description": "Configs",
   "main": "./dist/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -d",
     "lint": "eslint ./src/**/*.ts --format stylish",
     "test": "ava",
     "preversion": "npm test",
