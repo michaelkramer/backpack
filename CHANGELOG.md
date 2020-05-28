@@ -1,5 +1,13 @@
 # Changelog
 
+## [v1.0.19](https://github.com/michaelkramer/backpack/tree/v1.0.19) (2020-05-28)
+
+[Full Changelog](https://github.com/michaelkramer/backpack/compare/v1.0.18...v1.0.19)
+
+**Merged pull requests:**
+
+- Add args to logging [\#5](https://github.com/michaelkramer/backpack/pull/5) ([michaelkramer](https://github.com/michaelkramer))
+
 ## [v1.0.18](https://github.com/michaelkramer/backpack/tree/v1.0.18) (2020-05-28)
 
 [Full Changelog](https://github.com/michaelkramer/backpack/compare/v1.0.17...v1.0.18)
