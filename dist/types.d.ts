@@ -8,10 +8,10 @@ export interface $ConnectionOptsType {
     };
 }
 export interface $Config {
-    db: Object;
-    cache: Object;
-    captureUncaught: boolean;
-    captureUnhandled: boolean;
+    db?: Object;
+    cache?: Object;
+    captureUncaught?: boolean;
+    captureUnhandled?: boolean;
 }
 export interface LoggerInterface {
     debug(message: string, ...args: any[]): void;
