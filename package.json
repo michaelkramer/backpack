@@ -6,6 +6,7 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
+    "watch": "nodemon --watch src --ext ts,js,json npm run build",
     "clean": "rm -R ./dist",
     "lint": "eslint ./src/**/*.ts --format stylish",
     "test": "ava",
@@ -39,6 +40,7 @@
     "@typescript-eslint/parser": "^3.0.1",
     "ava": "^3.8.2",
     "eslint": "^7.1.0",
+    "nodemon": "^2.0.4",
     "typescript": "^3.9.3"
   }
 }
