@@ -54,7 +54,7 @@ export class Logger implements LoggerInterface {
   }
 
   private log(level: string, message: string, args: any[]): void {
-    console.log(`==> ${this.formatScope()} ${message}`);
+    console.log(`${this.formatScope()} ${message}`);
   }
 
   private formatScope(): string {
