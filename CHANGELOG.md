@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.0.20](https://github.com/michaelkramer/backpack/tree/v1.0.20) (2020-05-28)
+
+[Full Changelog](https://github.com/michaelkramer/backpack/compare/v1.0.19...v1.0.20)
+
 ## [v1.0.19](https://github.com/michaelkramer/backpack/tree/v1.0.19) (2020-05-28)
 
 [Full Changelog](https://github.com/michaelkramer/backpack/compare/v1.0.18...v1.0.19)
