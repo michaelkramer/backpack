@@ -1,5 +1,14 @@
 # Changelog
 
+## [Unreleased](https://github.com/michaelkramer/backpack/tree/HEAD)
+
+[Full Changelog](https://github.com/michaelkramer/backpack/compare/v1.0.21...HEAD)
+
+**Merged pull requests:**
+
+- some changes [\#6](https://github.com/michaelkramer/backpack/pull/6) ([michaelkramer](https://github.com/michaelkramer))
+- NPM Publish [\#2](https://github.com/michaelkramer/backpack/pull/2) ([michaelkramer](https://github.com/michaelkramer))
+
 ## [v1.0.21](https://github.com/michaelkramer/backpack/tree/v1.0.21) (2020-05-28)
 
 [Full Changelog](https://github.com/michaelkramer/backpack/compare/v1.0.20...v1.0.21)
@@ -59,10 +68,6 @@
 ## [v1.0.10](https://github.com/michaelkramer/backpack/tree/v1.0.10) (2020-05-26)
 
 [Full Changelog](https://github.com/michaelkramer/backpack/compare/v1.0.9...v1.0.10)
-
-**Merged pull requests:**
-
-- NPM Publish [\#2](https://github.com/michaelkramer/backpack/pull/2) ([michaelkramer](https://github.com/michaelkramer))
 
 ## [v1.0.9](https://github.com/michaelkramer/backpack/tree/v1.0.9) (2020-05-26)
 
