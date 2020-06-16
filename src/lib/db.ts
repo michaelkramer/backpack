@@ -35,7 +35,7 @@ function enableSQLLogging(
       );
       delete runningQueries[query.__knexQueryUid];
     }
-    //console.log("==> query.sql", query);
+    console.log("==> query.sql ", query.sql);
     if (query.sql && query.bindings && query.bindings.length) {
       const oldSql = clone(query.sql);
       const bindings = clone(query.bindings);

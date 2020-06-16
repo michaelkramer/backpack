@@ -1,5 +1,5 @@
-declare const db: {};
-declare const cache: {};
+declare const db: any;
+declare const cache: any;
 declare const configDefault: {
     cache: {};
     db: {};

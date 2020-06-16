@@ -1,5 +1,5 @@
 import * as path from "path";
-import { LoggerInterface } from "../types";
+import { $LoggerInterface } from "../types";
 
 /**
  * core.Log
@@ -12,7 +12,7 @@ import { LoggerInterface } from "../types";
  * this in the start up process in the core/index.ts file.
  */
 
-export class Logger implements LoggerInterface {
+export class Logger implements $LoggerInterface {
   public static DEFAULT_SCOPE = "app";
 
   private static parsePathToScope(filepath: string): string {
@@ -54,7 +54,11 @@ export class Logger implements LoggerInterface {
   }
 
   private log(level: string, message: string, args: any[]): void {
-    console.log(`${this.formatScope()} ${message}`, args);
+    if (args && args.length > 0) {
+      console.log(`${this.formatScope()} ${message} ${args}`);
+    } else {
+      console.log(`${this.formatScope()} ${message}`);
+    }
   }
 
   private formatScope(): string {

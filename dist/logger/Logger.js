@@ -60,7 +60,12 @@ var Logger = /** @class */ (function () {
         this.log("error", message, args);
     };
     Logger.prototype.log = function (level, message, args) {
-        console.log(this.formatScope() + " " + message, args);
+        if (args && args.length > 0) {
+            console.log(this.formatScope() + " " + message + " " + args);
+        }
+        else {
+            console.log(this.formatScope() + " " + message);
+        }
     };
     Logger.prototype.formatScope = function () {
         return "[" + this.scope + "]";

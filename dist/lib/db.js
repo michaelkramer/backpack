@@ -30,7 +30,7 @@ function enableSQLLogging(knexInstance, connectionName) {
             totalTimeInMS = chalk_1.default.green(Date.now() - runningQueries[query.__knexQueryUid] + "ms");
             delete runningQueries[query.__knexQueryUid];
         }
-        console.log("==> query.sql", query.sql);
+        console.log("==> query.sql ", query.sql);
         if (query.sql && query.bindings && query.bindings.length) {
             var oldSql = lodash_1.clone(query.sql);
             var bindings_1 = lodash_1.clone(query.bindings);

@@ -1,4 +1,4 @@
-import { LoggerInterface } from "../types";
+import { $LoggerInterface } from "../types";
 /**
  * core.Log
  * ------------------------------------------------
@@ -9,7 +9,7 @@ import { LoggerInterface } from "../types";
  * By Default it uses the debug-adapter, but you are able to change
  * this in the start up process in the core/index.ts file.
  */
-export declare class Logger implements LoggerInterface {
+export declare class Logger implements $LoggerInterface {
     static DEFAULT_SCOPE: string;
     private static parsePathToScope;
     private scope;

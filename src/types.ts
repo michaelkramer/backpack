@@ -1,3 +1,4 @@
+import { QueryBuilder } from "knex";
 export interface $ConnectionOptsType {
   debug?: any;
   connection: any;
@@ -15,9 +16,20 @@ export interface $Config {
   captureUnhandled?: boolean;
 }
 
-export interface LoggerInterface {
+export interface $LoggerInterface {
   debug(message: string, ...args: any[]): void;
   info(message: string, ...args: any[]): void;
   warn(message: string, ...args: any[]): void;
   error(message: string, ...args: any[]): void;
+}
+
+export interface $Address {
+  city: string;
+  state: string;
+  zipCode: string;
+  zip: string;
+  address: string;
+  street: string;
+  streetAddress1: string;
+  streetAddress2: string;
 }
