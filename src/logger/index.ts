@@ -1,2 +1,2 @@
 export * from "./Logger";
-export { LoggerInterface } from "../types";
+export { $LoggerInterface } from "../types";

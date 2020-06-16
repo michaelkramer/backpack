@@ -6,7 +6,7 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "watch": "nodemon --watch src --ext ts,js,json npm run build",
+    "watch": "nodemon --watch src --ext ts,js,json --exec yarn build",
     "clean": "rm -R ./dist",
     "lint": "eslint ./src/**/*.ts --format stylish",
     "test": "ava",
@@ -30,7 +30,9 @@
   "dependencies": {
     "chalk": "^4.0.0",
     "knex": "^0.21.1",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.15",
+    "numeral": "^2.0.6",
+    "pg": "^8.2.1"
   },
   "devDependencies": {
     "@types/knex": "^0.16.1",
