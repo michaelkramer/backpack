@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/michaelkramer/backpack/tree/HEAD)
+
+[Full Changelog](https://github.com/michaelkramer/backpack/compare/v1.0.22...HEAD)
+
+**Merged pull requests:**
+
+- Bump lodash from 4.17.15 to 4.17.19 [\#7](https://github.com/michaelkramer/backpack/pull/7) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v1.0.22](https://github.com/michaelkramer/backpack/tree/v1.0.22) (2020-06-16)
 
 [Full Changelog](https://github.com/michaelkramer/backpack/compare/v1.0.21...v1.0.22)
