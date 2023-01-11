@@ -29,7 +29,7 @@
   "homepage": "https://github.com/michaelkramer/backpack#readme",
   "dependencies": {
     "chalk": "^4.0.0",
-    "knex": "^0.21.1",
+    "knex": "^2.4.0",
     "lodash": "^4.17.15",
     "numeral": "^2.0.6",
     "pg": "^8.2.1"
